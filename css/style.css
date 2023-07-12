@@ -71,6 +71,15 @@ body {
     width: 65%;
 }
 
+figcaption p {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+figcaption h4 {
+    margin-bottom: 0px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
