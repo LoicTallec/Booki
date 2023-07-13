@@ -18,6 +18,28 @@ body {
     justify-content: center;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -66,20 +88,298 @@ body {
     box-sizing: border-box;
 }
 
+.populaires a {
+    text-decoration: none;
+    color: black;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
 
-figcaption p {
-    margin-bottom: 5px;
-    margin-top: 10px;
+.hebergements a {
+    text-decoration: none;
+    color: black;
 }
 
-figcaption h4 {
+/******************* ADD NAV **********************************/
+
+.navigation {
+    display: flex;
+}
+
+.navigation img {
+    margin-right: 75%;
+}
+
+.navigation a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: -5px;
+    margin-top: -8px;
+}
+
+.navigation a:hover {
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+
+.navigation p {
     margin-bottom: 0px;
 }
 
+/************************** add header ************************/
+
+header {
+    width: 100%;
+    height: 280px;
+
+}
+
+
+
+.navigation img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.filters p {
+    color: black;
+    border: #D9D9D9 2px solid;
+    border-radius: 30px;
+    border-color: #F2F2F2;
+    padding: 10px 15px 10px 15px;
+}
+
+.filters h2 {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.filters ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+
+.filters li {
+    margin-right: 15px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.filters i {
+    margin-right: 10px;
+}
+
+.filters p:hover {
+    background-color: #DEEBFF;
+}
+
+.sous-logo h2 {
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.sous-logo p {
+    margin-top: 5px;
+    margin-bottom: 20px
+}
+
+.dispo p {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.dispo i {
+    border: #D9D9D9 1px solid;
+    border-radius: 100%;
+    padding: 7px;
+    width: 5px;
+    height: 5px;
+    margin-right: 20px;
+}
+
+/*************** add button ****************/
+
+form {
+    width: 25%;
+    display: flex;
+}
+
+.map {
+    width: 20px;
+    border: #F2F2F2 1px solid;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+}
+
+.btn {
+    font-size: 15px;
+    color: white;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+input {
+    border: #F2F2F2 1px solid;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    padding: 0;
+    font-weight: bold;
+    width: 180px;
+}
+
+/******************** add hebergements ******************/
+
+.hebergements figure {
+    width: 235px;
+    height: 190px;
+    margin: 0px 12.5px 0px 12.5px;
+}
+
+.hebergements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hebergements h3 {
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    padding-left: 13px;
+    font-size: 21px;
+}
+
+.hebergements h5 {
+    padding-left: 23px;
+    margin: 0;
+    font-size: 16px;
+    height: 20px;
+}
+
+.hebergements h4 {
+    margin: 0;
+    margin-top: 7px;
+    height: 20px;
+    font-size: 15px;
+}
+
+figcaption p {
+    margin-bottom: 4px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+figcaption h4 {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+figure img {
+    width: 235px;
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+
+figcaption .card-rating  {
+    padding-left: 10px;
+}
+/******************** add activity ******************/
+
+.activity {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity h3 {
+    width: 100%;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.activity figure {
+    width: 290px;
+    height: 430px;
+}
+
+.activity img {
+    width: 100%;
+    height: 380px;
+}
+
+.activity .card {
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.activity a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.activity h5 {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+/******************** add footer******************/
+
+footer {
+    margin-top: 6%;
+    background-color: #F2F2F2;
+    display: flex;
+    height: 11%;
+}
+
+footer article {
+    margin-right: 20%;
+}
+
+footer li {
+    width: 120%;
+    margin-bottom: 12%;
+   list-style-type: none;
+}
+
+footer h5 {
+    margin-bottom: 0;
+    font-size: 18px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/********************** add*************************/
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -124,7 +424,6 @@ figcaption h4 {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
 
 
 
