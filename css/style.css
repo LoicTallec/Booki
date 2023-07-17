@@ -39,6 +39,9 @@ a {
     color: #000;
 }
 
+.btn-mobile {
+    display: none;
+}
 
 .main-container {
     width: 100%;
@@ -71,7 +74,7 @@ a {
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
 
@@ -88,76 +91,56 @@ a {
     box-sizing: border-box;
 }
 
-.populaires a {
-    text-decoration: none;
-    color: black;
-}
-
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-}
-
-.hebergements a {
-    text-decoration: none;
-    color: black;
+    height: 623px;
 }
 
 /******************* ADD NAV **********************************/
 
 .navigation {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-.navigation img {
-    margin-right: 75%;
+.navigation li {
+    display: inline;
+    justify-content: right;
+}
+
+.navigation ul {
+    margin-top: 0.5em;
+    width: 280px;
 }
 
 .navigation a {
-    margin-left: 50px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: -5px;
-    margin-top: -8px;
+    margin-left: 18%;
+    margin-top: 15%;
+}
+.navigation img {
+    width: 5%;
+    height: 5%;
+    margin: 1% 0% 3% 0;
 }
 
 .navigation a:hover {
     border-top: #0065FC 2px solid;
+    padding-top: 14px;
     color: #0065FC;
 }
 
-.navigation p {
-    margin-bottom: 0px;
+.sous-logo h1,
+.sous-logo p {
+    margin-bottom: 0.2em;
+}
+
+.sous-logo p {
+    margin-top: 0;
 }
 
 /************************** add header ************************/
-
-header {
-    width: 100%;
-    height: 280px;
-
-}
-
-
-
-.navigation img {
-    width: 100%;
-    height: 100%;
-    margin-top: 10px;
-}
-
-.filters p {
-    color: black;
-    border: #D9D9D9 2px solid;
-    border-radius: 30px;
-    border-color: #F2F2F2;
-    padding: 10px 15px 10px 15px;
-}
-
-.filters h2 {
-    font-size: 18px;
-    margin-right: 15px;
-}
 
 .filters ul {
     list-style: none;
@@ -168,45 +151,41 @@ header {
 
 .filters li {
     margin-right: 15px;
+    border: #F2F2F2 2px solid;
+    padding: 10px;
+    border-radius: 50px; 
+}
+
+.filters li:hover {
+    background-color: #DEEBFF;
 }
 
 .filters {
     display: flex;
     align-items: center;
+    
 }
 
 .filters i {
+    margin-right:5px;
+}
+
+.filters h2 {
+    font-size: 16px;
+    margin: 3% 1% 3% 0;
+}
+
+.main-container p {
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+.main-container p i {
+    border: #F2F2F2 solid 2px;
+    border-radius: 30px;
+    padding: 12px 10px 12px 10px;
     margin-right: 10px;
 }
-
-.filters p:hover {
-    background-color: #DEEBFF;
-}
-
-.sous-logo h2 {
-    margin-bottom: 0px;
-    margin-top: 40px;
-}
-
-.sous-logo p {
-    margin-top: 5px;
-    margin-bottom: 20px
-}
-
-.dispo p {
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.dispo i {
-    border: #D9D9D9 1px solid;
-    border-radius: 100%;
-    padding: 7px;
-    width: 5px;
-    height: 5px;
-    margin-right: 20px;
-}
-
 /*************** add button ****************/
 
 form {
@@ -214,15 +193,15 @@ form {
     display: flex;
 }
 
-.map {
-    width: 20px;
+form .fa-solid {
+    color: #000;
+    padding: 15px;
     border: #F2F2F2 1px solid;
-    padding: 15px 15px 15px 15px;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
 }
 
-.btn {
+.btn-desktop {
     font-size: 15px;
     color: white;
     background-color: var(--main-color);
@@ -237,7 +216,6 @@ form {
     flex-direction: row;
 
 }
-
 
 input {
     border: #F2F2F2 1px solid;
@@ -254,47 +232,14 @@ input {
 .hebergements figure {
     width: 235px;
     height: 190px;
-    margin: 0px 12.5px 0px 12.5px;
+    margin-bottom: 15%;
 }
 
 .hebergements {
     display: flex;
     flex-wrap: wrap;
-}
-
-.hebergements h3 {
-    width: 100%;
-    height: 20px;
-    margin: 0;
-    padding-left: 13px;
-    font-size: 21px;
-}
-
-.hebergements h5 {
-    padding-left: 23px;
-    margin: 0;
-    font-size: 16px;
-    height: 20px;
-}
-
-.hebergements h4 {
-    margin: 0;
-    margin-top: 7px;
-    height: 20px;
-    font-size: 15px;
-}
-
-figcaption p {
-    margin-bottom: 4px;
-    margin-top: 5px;
-    padding-left: 10px;
-    font-size: 13px;
-}
-
-figcaption h4 {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    padding-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 figure img {
@@ -304,80 +249,89 @@ figure img {
     margin-bottom: 0;
 }
 
-figcaption .card-rating  {
-    padding-left: 10px;
+.hebergements h2 {
+    width: 100%;
+    margin: 0 0 4% 0;
 }
+
+.hebergements h3 {
+    margin: 3% 0 0 5%;
+    font-size: 16px;
+}
+
+.hebergements figcaption p {
+    margin: 3% 0 0 5%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hebergements .card-rating {
+    margin: 2% 0 0 5%;
+}
+
+.hebergements p {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 18px;
+}
+
 /******************** add activity ******************/
 
-.activity {
+.activites {
     display: flex;
     flex-wrap: wrap;
 }
 
-.activity h3 {
+.activites h2 {
     width: 100%;
-    margin-left: 3%;
-    font-size: 20px;
+    padding-left: 3%;
+    font-size: 22px;
     margin-top: 5%;
 }
 
-.activity figure {
+.activites figure {
     width: 290px;
     height: 430px;
+    margin: 5% 25px 20% 12%
 }
 
-.activity img {
-    width: 100%;
-    height: 380px;
+.activites figure img {
+    width: 290px;
+    height: 370px;
 }
 
-.activity .card {
+.activites .card{
     padding: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 30px;
 }
 
-.activity a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
+.activites figcaption {
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-top: 6%;
 }
-
-.activity h5 {
-    padding-left: 20px;
-    margin-top: 12px;
-}
-
 /******************** add footer******************/
 
 footer {
-    margin-top: 6%;
     background-color: #F2F2F2;
     display: flex;
-    height: 11%;
 }
 
-footer article {
-    margin-right: 20%;
-}
+footer section {
+    width: 100%;
+    margin-left: 2%;
+} 
+
+ footer h3 {
+    width: 200px;
+    margin-bottom: 3%;
+ }
 
 footer li {
-    width: 120%;
-    margin-bottom: 12%;
-   list-style-type: none;
+    margin-bottom: 3%;
 }
 
-footer h5 {
-    margin-bottom: 0;
-    font-size: 18px;
-
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-}
 
 /********************** add*************************/
 /****** Populaires ***********/
@@ -440,6 +394,9 @@ footer a {
         width: 100%;
     }
 
+    .hebergements p {
+        width: 100%;
+    }
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -461,6 +418,29 @@ footer a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites figure {
+        width: 200px;
+        height: 260px;
+        margin: 5% 25px 20% 12%
+    }
+    
+    .activites figure img {
+        width: 50%px;
+        height: 190px;
+    }
+    
+    .activites .card{
+        padding: 0;
+    }
+    
+    .activites figcaption {
+        display: flex;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 7%;
+        margin-top: 6%;
     }
 }
 
