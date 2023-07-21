@@ -640,4 +640,7 @@ footer li {
         flex-direction: column;
         padding-left: 20px;
     }
+    .populaires-cards a {
+        width: 100%;
+    }
 }
