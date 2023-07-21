@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 ul {
@@ -94,7 +95,7 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    height: 623px;
+    height:50%;
 }
 
 /******************* ADD NAV **********************************/
@@ -143,7 +144,6 @@ a {
 /************************** add header ************************/
 
 .filters ul {
-    list-style: none;
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -163,8 +163,9 @@ a {
 .filters {
     display: flex;
     align-items: center;
-    
 }
+
+
 
 .filters i {
     margin-right:5px;
@@ -230,20 +231,22 @@ input {
 /******************** add hebergements ******************/
 
 .hebergements figure {
-    width: 235px;
+    width: 100%;
     height: 190px;
-    margin-bottom: 15%;
+
 }
 
 .hebergements {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 30px;
 }
-
+.hebergements a {
+   width:  calc((100% - 60px) / 3);
+}
 figure img {
-    width: 235px;
+    width: 100%;
     height: 110px;
     border-radius: 15px 15px 0 0;
     margin-bottom: 0;
@@ -269,7 +272,7 @@ figure img {
     margin: 2% 0 0 5%;
 }
 
-.hebergements p {
+.hebergements > p {
     font-weight: bold;
     margin-top: 0;
     font-size: 18px;
@@ -280,23 +283,29 @@ figure img {
 .activites {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.activites a {
+    width:  calc((100% - 90px) / 4);
 }
 
 .activites h2 {
     width: 100%;
-    padding-left: 3%;
     font-size: 22px;
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 .activites figure {
-    width: 290px;
-    height: 430px;
-    margin: 5% 25px 20% 12%
+    width: 100%;
+    height: 100%;
+    
 }
 
 .activites figure img {
-    width: 290px;
+    width: 100%;
     height: 370px;
 }
 
@@ -308,9 +317,9 @@ figure img {
     display: flex;
     font-size: 15px;
     font-weight: bold;
-    margin-left: 7%;
-    margin-top: 6%;
+    padding: 15px;
 }
+
 /******************** add footer******************/
 
 footer {
@@ -420,11 +429,6 @@ footer li {
         font-size: 13px;
     }
 
-    .activites figure {
-        width: 200px;
-        height: 260px;
-        margin: 5% 25px 20% 12%
-    }
     
     .activites figure img {
         width: 50%px;
@@ -434,17 +438,162 @@ footer li {
     .activites .card{
         padding: 0;
     }
+
+    .filters ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        }
     
-    .activites figcaption {
-        display: flex;
-        font-size: 15px;
-        font-weight: bold;
-        margin-left: 7%;
-        margin-top: 6%;
+
+    .populaires-cards a {
+       width: calc((100% - 20px) / 3);
+       padding-right: 30px;
     }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    body {
+        margin: 0;
+    } 
+    
+
+    .sous-logo {
+        margin: 30px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .navigation img{
+        width: 20%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+    .navigation a {
+        display: block;
+        font-size: 20px;
+        border-bottom: #F2F2F2 solid;
+        border-bottom-width: 3px;
+        margin: 0;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .navigation li {
+        width: 100%;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .navigation a:hover {
+        border-top: none;
+        border-bottom: #0065FC solid;
+        border-bottom-width: 3px;
+        padding: 0;
+        padding-bottom: 30px;
+        color: #0065FC;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    .activites {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn-desktop {
+        display: none;
+    }   
+
+    .btn-mobile {
+        display: block;
+        background-color: #0065FC;
+        padding-right: 10px;
+        padding-left: 10px;
+        border: 5px solid #0065FC;
+        border-radius: 15px;
+        box-shadow: #8f8f8f 0px 5px 5px;
+    }
+
+    form {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    input {
+        width: 100%;
+        margin-right: -10px;
+        height: 50px;
+    }
+
+    form .fa-search {
+        border: none;
+        color: white;
+        padding: 0;
+        background-color: #0065FC;
+    }
+
+    .filters li {
+        width: 40%;
+        min-width: 125px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .filters h2 {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .filters ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%; 
+        gap: 15px;   
+        margin: 10px 20px 20px 0px
+    }
+    .filters {
+        display: inline;
+        margin-bottom: 30px;
+    }
+
+    header > p i {
+        margin-left: 20px;
+    }
+
+    .populaires{
+        display: flex;
+        flex-direction: column;
+        order: -1;
+    }
+
+    .hebergements {
+        flex-direction: column;
+    }
 }
