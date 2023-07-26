@@ -158,6 +158,7 @@ a {
 
 .filters li:hover {
     background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .filters {
@@ -397,10 +398,7 @@ footer li {
     .hebergements {
         width: 100%;
     }
-
-    .hebergements p {
-        width: 100%;
-    }
+    
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -430,7 +428,6 @@ footer li {
 
     
     .activites figure img {
-        width: 50%px;
         height: 190px;
     }
     
@@ -602,7 +599,7 @@ footer li {
 
     .hebergements-and-populaires .populaires {
         border-radius: 0px;
-        background-color: F2F2F2;
+        background-color: #F2F2F2;
     }
 
     .hebergements-and-populaires .hebergements {
