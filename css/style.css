@@ -325,6 +325,7 @@ footer {
 
 footer section {
     width: 100%;
+    padding-left: 15px;
 } 
 
  footer h3 {
@@ -633,6 +634,7 @@ footer li {
         flex-direction: column;
         justify-content: center;
         padding: 30px;
+        padding-right: 0;
         padding-top: 0;
     }
 
@@ -651,6 +653,7 @@ footer li {
         flex-direction: column;
         padding-left: 20px;
     }
+
     .populaires-cards a {
         width: 100%;
     }
