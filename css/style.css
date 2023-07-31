@@ -321,11 +321,12 @@ figure img {
 footer {
     background-color: #F2F2F2;
     display: flex;
+    padding-left: 30px;
+    box-sizing: content-box;
 }
 
 footer section {
     width: 100%;
-    padding-left: 15px;
 } 
 
  footer h3 {
